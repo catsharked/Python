@@ -1,12 +1,19 @@
-print("Enter up to 10 numbers to do addition. Enter 0 to calculate.")
+print("Enter numbers to do addition. Enter 0 for the answer.")
 adding = true
-answer = number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9 + number10
+
+numbers = []
 while adding = true
-  number1 = int(input("Starting number: "))
-  number2 = int(input("+ "))
-  number3 = int(input("+ "))
+ number = int(input("+ "))
+ numbers.append(number)
+ if number = 0
+    for x in numbers:
+      answer += x
+      numbers = []
+      numbers.append(answer)
+    print("Answer:", answer)
+  
   if number3 = 0
-    print("Answer:" answer)
+   
     adding = false
 
   number4 = int(input("+ "))
