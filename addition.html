@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>PyScript Demo</title>
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-</head>
-<body>
-<h2>Python in HTML</h2>
+<textarea id="code">
+print("hello from python")
+</textarea>
+
+<button onclick="runPython()">Run</button>
+
+<pre id="output"></pre>
+
 <py-script>
   print("Enter numbers to do addition. Enter 0 for the answer.")
-adding = true
+adding = True
 
 numbers = []
-while adding = true
+answer = 0
+while adding == True:
  number = int(input("+ "))
  numbers.append(number)
- if number = 0
-    for x in numbers:
-      answer += x
-      numbers = []
-      numbers.append(answer)
-    print("Answer:", answer)
+ answer = sum(numbers)
+ print("=", answer)
 </py-script>
 </body>
 </html>
